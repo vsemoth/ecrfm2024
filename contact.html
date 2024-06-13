@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekhephini FM</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-color-primary text-color-white">
+    <header>
+        <nav class="container flex justify-between items-center">
+            <div class="w-20 py-5 text-color-secondary font-bold text-3xl">
+                <a href="" class="flex justify-evenly">                    
+                    <img src="img/hero1.jpg" alt="Ekhephini FM Logo" class="w-50"><span class="text-color-white">Ekhephini</span> FM
+                </a>
+            </div>
+            <div>
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li><a href="/index.html" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a href="/about.html" class="hover:text-color-secondary ease-in duration-200">About</a></li>
+                    <li><a href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+                    <!-- <li><a href="#listen"><button class="btn">Listen Live</button></a></li> -->
+                </ul>
+            </div>
+
+            <!-- mobile screen -->
+            <div id="hamburger" class="lg:hidden cursor-pointer z-50">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="menu" class="hidden bg-color-primary-dark h-[100vh] absolute inset-0">
+                <ul class="h-full grid place-items-center p-20">
+                    <li><a id="hLink" href="/index.html" class="hover:text-color-secondary ease-in duration-200">Home</a></li>
+                    <li><a id="hLink" href="/about.html" class="hover:text-color-secondary ease-in duration-200">About</a></li>
+                    <li><a id="hLink" href="#contact" class="hover:text-color-secondary ease-in duration-200">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container py-20">
+                <div class="flex flex-col items-center z-20 md:flex-row">
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10 lg:w-full">
+                        <h1 class="text-3xl md:text-4xl font-bold text-color-secondary leading-snug mb-4"><span class="text-color-white">Ekhephini</span> Community Radio</h1>
+                        <br>
+                        <h4 class="text-3xl md:text-4xl font-semibold leading-snug mb-4">Contact Details</h4>
+                        <p class="text-color-white leading-relaxed mb-10">
+
+                        </p>
+                            <p class="text-color-white leading-relaxed mb-4">Station Manager:</p>
+                            <ol>
+                                <li>Email - stationmanager@ekhephinifm.co.za</li>
+                                <li>Cell - +27 74 257 8799</li>
+                            </ol>
+                            <p class="text-color-white leading-relaxed mb-4">Marketing & Sales</p>
+                            <ol>
+                                <li>Email - sales@ekhephinifm.co.za</li>
+                                <li>Cell - +27 78 918 1331</li>
+                            </ol>
+                            <p class="text-color-white leading-relaxed mb-10">Physical Address</p>
+                            <p class="text-color-white leading-relaxed mb-10">11 de Villiers Str.</p>
+                            <p class="text-color-white leading-relaxed mb-10">Central</p>
+                            <p class="text-color-white leading-relaxed mb-10">Barkly East</p>
+                            <p class="text-color-white leading-relaxed mb-10">9786</p>
+                            
+                    </div>
+
+                    <div class="md:w-1/2 lg:w-1/2">
+                        <img src="img/hero1.jpg" alt="Ekhephini FM Logo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // mobile menu
+        const hamburger = document.querySelector('#hamburger');
+        const menu = document.querySelector('#menu');
+        const hLink = document.querySelector('#hLink');
+        const faSolid = document.querySelector(".fa-solid");
+
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle('hidden');
+            faSolid.classList.toggle('fa-xmark');
+        })
+    </script>
+</body>
+</html>
